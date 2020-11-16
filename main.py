@@ -70,7 +70,7 @@ def login():
 
 
 
-@app.route('/register/', methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         new_user = User(username=request.form['username'],
